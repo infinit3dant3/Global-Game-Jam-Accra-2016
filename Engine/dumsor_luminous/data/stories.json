@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "cover": "icon.png",
+        "description": "",
+        "name": "Dumsor Attack",
+        "episodes": [
+            {
+                "id": 1,
+                "content": "content.zip",
+                "cover": "icon.png",
+                "storyId": 1,
+                "description": "Tip\n Use your defence to prevent dumsor burglars from reaching your genset!",
+                "name": "Dumsor Attack",
+                "available": true,
+                "createdDateTimeStamp": 1441098494
+            }
+        ],
+        "createdDateTimeStamp": 1441098372
+    }
+]

@@ -1,0 +1,138 @@
+{
+    "first_page": "level1",
+    "pages": [
+    	      
+    	    {
+            "page": "start",
+            "next_page": "level1",
+            "type": "narration2",
+            "components": "",
+            "next_button": {
+                "image": "narr_next.png",
+                "width": 64,
+                "height": 64,
+                "position": {"x": 675, "y": 602}
+            },     
+            "text_style": {
+                "font": "bold 19pt Lucida Console", "fill": "black", "align": "center", "stroke": "orange",
+                "strokeThickness": 1
+            },
+            "text_background": {
+                "type": "shape",
+                "image": "textbackground.jpg",
+                "shape": "round_rect",
+                "radius": 20,
+                "color": "0xffffff",
+                "padding": 20,
+                "width": 680,
+                "height": 140,
+                "position": {"x": 10, "y": 570},
+                "alpha": 0.0
+            },
+            "narration": {
+                "audio": "",
+                "text": [
+                	"This is Kwame.\n Kwame works at ECG. \nKwame knows about dumsor. \nKwame buys a generator. \nKwame must protect his generator from burglars!"
+                ]
+            },
+            "background": "../000/chps_hq.png",
+            "background_pan": true,
+            "audio": "",
+            "transition": {
+                "transition_type": "auto",
+                "duration": 5000,
+                "animation": "fade"
+            }
+        } ,
+        {
+            "page": "level1",
+            "next_page": "evaluate",
+            "type": "activity",
+            "activity": "activity_1",
+			"orientation":"portrait",
+            "components": "",
+            "badges": [
+                {
+                    "metric": "score",
+                    "value": 8000,
+                    "badge_id": 3,
+                    "style": "style_1"
+                },
+                {
+                    "metric": "completed",
+                    "value": 5,
+                    "badge_id": 4,
+                    "style": "style_1"
+                }
+            ],
+            "background": "game_intro.jpg",
+            "audio": "game_begin.mp3",
+            "audio_end": "game_end.mp3",
+            "text_start": "Dumsor Attack",
+            "text_end": "Game Over",
+            "info_start": [
+                "This is Kwame.",
+                "Kwame works at ECG.",
+                "Kwame knows about dumsor.",
+                "Kwame buys a generator.",
+                "Kwame must protect his generator from burglars!",
+                "",
+                "Place your defence strategically to destroy the burglars"
+            ],
+            "info_end": [
+                "Excellent",
+                "You've Help Youself out big time."
+            ], 
+            "info_skip": [
+                "You Skipped the game",
+                "You will lose some points for this"
+            ],               
+            "info_replay": [
+                "Kwame needs your help!",
+                "Help him out",
+                "You will have to play this game to help him out!",
+                "Let's Try Harder!"
+            ],
+            "game_url": "minigames/dumsorAttack/index.html",
+            "return_url": "../../index.html",
+            "timer_countdown": 0,
+            "expected_score": 800,
+            "skippable": true,
+            "transition": {
+                "transition_type": "manual",
+                "animation": "fadeGrow"
+            },
+            "title": {
+                "text_style": {"font": "bold 28px Arial", "fill": "white"},
+                "position": {"x": 237, "y": 30},
+                "background": {
+                    "color": "0xffffff",
+                    "width": 806, 
+                    "height": 60,
+                    "alpha": 0.3
+                }
+            },
+            "content": {
+                "text_style": {"font": "23pt Arial", "fill": "white", "align": "center"},
+                "background": {
+                    "color": "0x000000",
+                    "width": 696, 
+                    "height": 504,
+                    "alpha": 0.5
+                }           
+            },
+            "start_button": {
+                "text": "Lets Go",
+                "position": {"x": 540, "y": 580},
+                "type": "button",
+                "image": "login_bt.png",
+                "width": 200, "height": 60, 
+                "text_style": {"font": "30px Arial", "fill": "white"},
+                "button_style": {"color": "0x005f11", "border": {"color": "0xffffff", "thickness": 1}}
+            }
+        }
+        
+        
+        
+    ]
+}
